@@ -37,27 +37,30 @@
       color: #111827;
     }
 
-    .hero {
-      padding: 80px 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
+    .hero-centered {
+      background-color: #f9fafb;
+      text-align: center;
+      padding: 80px 20px 60px;
     }
 
-    .hero-content {
-      max-width: 500px;
-      text-align: left;
+    .hero-inner {
+      max-width: 700px;
+      margin: auto;
     }
 
-    .hero-content h1 {
-      font-size: 2.5rem;
+    .hero-logo-large {
+      width: 120px;
+      height: auto;
       margin-bottom: 20px;
-      line-height: 1.2;
     }
 
-    .hero-content p {
+    .hero-centered h1 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .hero-centered p {
       font-size: 1.1rem;
       color: #4b5563;
       margin-bottom: 30px;
@@ -72,15 +75,12 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
     }
 
     .cta-button:hover {
       background-color: #1d4ed8;
-    }
-
-    .hero-logo img {
-      max-width: 300px;
-      height: auto;
     }
 
     .features {
@@ -117,12 +117,11 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
+      .hero-centered h1 {
+        font-size: 2rem;
       }
-      .hero-content {
-        text-align: center;
+      .cta-button {
+        width: 100%;
       }
     }
   </style>
@@ -143,14 +142,12 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
+  <section class="hero-centered">
+    <div class="hero-inner">
+      <img src="zaqa-hero-logo.png" alt="ZAQA.AI Logo" class="hero-logo-large" />
       <h1>Your AI Copilot for Enterprise Systems</h1>
       <p>Automate enterprise workflows, streamline operations, and design AI-powered dashboards tailored to your systems—all with zaqa.ai.</p>
-      <button class="cta-button">Request Early Access</button>
-    </div>
-    <div class="hero-logo">
-      <img src="zaqa-hero-logo.png" alt="Zaqa.ai Hero Logo" />
+      <a href="https://hkaiserhbs.github.io/startup-zaqa-landing-page/product-demo.html" target="_blank" class="cta-button">Request Early Access</a>
     </div>
   </section>
 
