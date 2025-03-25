@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How zaqa.ai Works</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -21,9 +22,8 @@
       align-items: center;
     }
     .logo img {
-  height: 40px;
-  vertical-align: middle;
-}
+      height: 40px;
+    }
     nav a {
       margin-left: 20px;
       text-decoration: none;
@@ -33,21 +33,55 @@
     nav a:hover {
       color: #111827;
     }
-    .content {
-      padding: 60px 40px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
     h1 {
+      text-align: center;
       font-size: 2.5rem;
+      margin-top: 60px;
       margin-bottom: 40px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+    .flowchart-section {
+      padding: 20px 40px 60px;
+      background-color: #f9fafb;
+      text-align: center;
+    }
+    .flowchart-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .flow-step {
+      background-color: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      padding: 20px;
+      width: 240px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .flow-step h3 {
+      font-size: 1.1rem;
+      margin-top: 16px;
+      color: #111827;
+    }
+    .flow-step p {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-top: 10px;
+    }
+    .circle {
+      width: 36px;
+      height: 36px;
+      background-color: #3b82f6;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      font-size: 1rem;
     }
     footer {
       text-align: center;
@@ -61,22 +95,42 @@
 
   <header>
     <div class="logo">
-        <a href="index.html">
-          <img src="zaqa-logo.png" alt="zaqa.ai logo" style="height: 40px;" />
-        </a>
-      </div>
+      <a href="index.html">
+        <img src="zaqa-logo.png" alt="zaqa.ai logo" />
+      </a>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="how-it-works.html">How It Works</a>
     </nav>
   </header>
 
-  <div class="content">
-    <h1>How zaqa.ai Works</h1>
+  <h1>How zaqa.ai Works</h1>
 
-    <!-- FLOWCHART IMAGE ONLY -->
-    <img src="how-zaqa-works.png" alt="how-zaqa-works" />
-  </div>
+  <section class="flowchart-section">
+    <div class="flowchart-container">
+      <div class="flow-step">
+        <div class="circle">1</div>
+        <h3>Upload Your Processes</h3>
+        <p>Start by uploading your operational documents, process maps, and key workflows. Zaqa.ai reads and understands your enterprise setup.</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">2</div>
+        <h3>Train the Copilot</h3>
+        <p>Our AI engine learns your business logic, connects to your IT systems, and builds custom intelligence modules tailored to your ops environment.</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">3</div>
+        <h3>Automate With Chat</h3>
+        <p>Send purchase orders, generate forms, or update dashboards—just by typing a message. It’s enterprise control at your fingertips.</p>
+      </div>
+      <div class="flow-step">
+        <div class="circle">4</div>
+        <h3>Monitor & Optimize</h3>
+        <p>View real-time metrics, manage inventory, and streamline operations through intelligent dashboards built just for your team.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
     &copy; 2025 zaqa.ai — All rights reserved.
